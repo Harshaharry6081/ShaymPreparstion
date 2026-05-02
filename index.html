@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam's SAP S/4HANA & MM Master Plan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <div class="container">
+        <header class="glass-panel">
+            <div class="header-content">
+                <div class="title-section">
+                    <h1>Shyam's SAP S/4HANA & MM</h1>
+                    <p class="subtitle">30-Day Master Preparation Plan (1.5 Hrs/Day)</p>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-stats">
+                        <span id="days-completed">0/30</span>
+                        <span>Days Completed</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="overall-progress"></div>
+                    </div>
+                    <p class="motivational-quote" id="quote">"Small daily improvements are the key to staggering long-term results."</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="filters glass-panel">
+            <button class="filter-btn active" data-phase="all">All Phases</button>
+            <button class="filter-btn" data-phase="1">Phase 1: Foundation</button>
+            <button class="filter-btn" data-phase="2">Phase 2: Core Purchasing</button>
+            <button class="filter-btn" data-phase="3">Phase 3: Inventory Mgmt</button>
+            <button class="filter-btn" data-phase="4">Phase 4: LIV & Integration</button>
+            <button class="filter-btn" data-phase="5">Phase 5: Advanced & Prep</button>
+        </div>
+
+        <main id="days-grid" class="days-grid">
+            <!-- Days will be dynamically injected here by JS -->
+        </main>
+    </div>
+
+    <!-- Modal for Day Details -->
+    <div id="day-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <span class="modal-phase" id="modal-phase">Phase 1</span>
+                <h2 id="modal-title">Day X: Title</h2>
+                <div class="modal-meta">
+                    <span><i class="far fa-clock"></i> 1 Hour 30 Mins</span>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="modal-checkbox">
+                        <span class="checkmark"></span>
+                        Mark as Complete
+                    </label>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h3>Topics to Cover:</h3>
+                <ul id="modal-topics" class="topics-list">
+                    <!-- Topics injected here -->
+                </ul>
+                <div class="resources-section">
+                    <h3>Recommended Approach:</h3>
+                    <p id="modal-approach">Detailed approach here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
