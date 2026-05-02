@@ -1,0 +1,343 @@
+{
+  "day1": {
+    "title": "Introduction to SAP S/4HANA & Fiori",
+    "keywords": [
+      "S/4HANA",
+      "HANA",
+      "Fiori",
+      "in-memory",
+      "R/3"
+    ],
+    "phase": 1
+  },
+  "day2": {
+    "title": "Enterprise Structure in MM",
+    "keywords": [
+      "Company Code",
+      "Plant",
+      "Storage Location",
+      "Purchasing Organization",
+      "Purchasing Group"
+    ],
+    "phase": 1
+  },
+  "day3": {
+    "title": "Material Master Data",
+    "keywords": [
+      "Material Type",
+      "Industry Sector",
+      "Material Master",
+      "number range",
+      "extend"
+    ],
+    "phase": 1
+  },
+  "day4": {
+    "title": "Business Partner (Vendor Master)",
+    "keywords": [
+      "Business Partner",
+      "BP",
+      "Vendor Master",
+      "CVI",
+      "Account Group",
+      "FLVN"
+    ],
+    "phase": 1
+  },
+  "day5": {
+    "title": "Purchasing Info Record & Source List",
+    "keywords": [
+      "Info Record",
+      "Source List",
+      "Quota Arrangement",
+      "ME11",
+      "ME01",
+      "MEQ1"
+    ],
+    "phase": 1
+  },
+  "day6": {
+    "title": "Purchase Requisition (PR)",
+    "keywords": [
+      "Purchase Requisition",
+      "PR",
+      "ME51N",
+      "Account Assignment",
+      "Item Category"
+    ],
+    "phase": 2
+  },
+  "day7": {
+    "title": "Request for Quotation (RFQ)",
+    "keywords": [
+      "RFQ",
+      "Quotation",
+      "ME41",
+      "ME47",
+      "ME49",
+      "Price Comparison"
+    ],
+    "phase": 2
+  },
+  "day8": {
+    "title": "Purchase Order (PO) \u2013 Basics",
+    "keywords": [
+      "Purchase Order",
+      "PO",
+      "ME21N",
+      "Document Type",
+      "Pricing Condition",
+      "condition technique"
+    ],
+    "phase": 2
+  },
+  "day9": {
+    "title": "Outline Agreements: Contracts",
+    "keywords": [
+      "Contract",
+      "ME31K",
+      "Release Order",
+      "Value Contract",
+      "Quantity Contract"
+    ],
+    "phase": 2
+  },
+  "day10": {
+    "title": "Outline Agreements: Scheduling Agreements",
+    "keywords": [
+      "Scheduling Agreement",
+      "ME31L",
+      "ME38",
+      "Schedule Line",
+      "JIT"
+    ],
+    "phase": 2
+  },
+  "day11": {
+    "title": "Special Procurement: Subcontracting",
+    "keywords": [
+      "Subcontracting",
+      "Bill of Materials",
+      "BOM",
+      "ME2O",
+      "541",
+      "CS01"
+    ],
+    "phase": 2
+  },
+  "day12": {
+    "title": "Special Procurement: Consignment",
+    "keywords": [
+      "Consignment",
+      "MRKO",
+      "101 K",
+      "Info Record",
+      "settlement"
+    ],
+    "phase": 2
+  },
+  "day13": {
+    "title": "Release Strategy in Purchasing",
+    "keywords": [
+      "Release Strategy",
+      "Release Code",
+      "Flexible Workflow",
+      "Characteristic",
+      "Class",
+      "CL02",
+      "CT04"
+    ],
+    "phase": 2
+  },
+  "day14": {
+    "title": "Goods Receipt (GR)",
+    "keywords": [
+      "Goods Receipt",
+      "MIGO",
+      "Movement Type 101",
+      "Stock Type",
+      "GR/IR",
+      "accounting"
+    ],
+    "phase": 3
+  },
+  "day15": {
+    "title": "Goods Issue (GI)",
+    "keywords": [
+      "Goods Issue",
+      "201",
+      "261",
+      "scrapping",
+      "reversal",
+      "cancellation"
+    ],
+    "phase": 3
+  },
+  "day16": {
+    "title": "Transfer Postings",
+    "keywords": [
+      "Transfer Posting",
+      "301",
+      "303",
+      "305",
+      "311",
+      "321",
+      "309"
+    ],
+    "phase": 3
+  },
+  "day17": {
+    "title": "Physical Inventory",
+    "keywords": [
+      "Physical Inventory",
+      "MI01",
+      "MI04",
+      "MI07",
+      "cycle counting",
+      "ABC"
+    ],
+    "phase": 3
+  },
+  "day18": {
+    "title": "Material Valuation & Split Valuation",
+    "keywords": [
+      "Valuation",
+      "Standard Price",
+      "Moving Average",
+      "Split Valuation",
+      "Valuation Category"
+    ],
+    "phase": 3
+  },
+  "day19": {
+    "title": "Batch Management",
+    "keywords": [
+      "Batch Management",
+      "Batch",
+      "MSC1N",
+      "Shelf Life",
+      "SLED",
+      "Batch Determination"
+    ],
+    "phase": 3
+  },
+  "day20": {
+    "title": "Reservation & Negative Stocks",
+    "keywords": [
+      "Reservation",
+      "MB21",
+      "Negative Stock"
+    ],
+    "phase": 3
+  },
+  "day21": {
+    "title": "Logistics Invoice Verification (LIV)",
+    "keywords": [
+      "Invoice Verification",
+      "MIRO",
+      "Three-Way Match",
+      "Tolerance",
+      "Payment Block",
+      "MRBR"
+    ],
+    "phase": 4
+  },
+  "day22": {
+    "title": "Credit Memos & Subsequent Debits/Credits",
+    "keywords": [
+      "Credit Memo",
+      "Subsequent Debit",
+      "Subsequent Credit",
+      "Return to Vendor"
+    ],
+    "phase": 4
+  },
+  "day23": {
+    "title": "Automatic Account Determination \u2013 Part 1",
+    "keywords": [
+      "Account Determination",
+      "OBYC",
+      "Valuation Class",
+      "Transaction Event Key",
+      "TEK"
+    ],
+    "phase": 4
+  },
+  "day24": {
+    "title": "Automatic Account Determination \u2013 Part 2",
+    "keywords": [
+      "OBYC",
+      "Account Modifier",
+      "GBB",
+      "troubleshoot",
+      "Chart of Accounts"
+    ],
+    "phase": 4
+  },
+  "day25": {
+    "title": "Integration with Other Modules (SD & PP)",
+    "keywords": [
+      "Third-Party",
+      "Stock Transport Order",
+      "STO",
+      "MRP",
+      "Production Order",
+      "Outbound Delivery"
+    ],
+    "phase": 4
+  },
+  "day26": {
+    "title": "S/4HANA Innovations in MM",
+    "keywords": [
+      "S/4HANA",
+      "MATDOC",
+      "Material Ledger",
+      "CDS",
+      "Fiori",
+      "simplification"
+    ],
+    "phase": 5
+  },
+  "day27": {
+    "title": "MRP & MRP Live",
+    "keywords": [
+      "MRP",
+      "MRP Live",
+      "MD01N",
+      "MD01",
+      "MRP Dispatcher",
+      "Planned Order"
+    ],
+    "phase": 5
+  },
+  "day28": {
+    "title": "Reporting & Analytics in S/4HANA",
+    "keywords": [
+      "Embedded Analytics",
+      "Fiori Overview Page",
+      "ALV",
+      "CDS",
+      "Analytical App"
+    ],
+    "phase": 5
+  },
+  "day29": {
+    "title": "Mock Interview \u2013 Scenario Based",
+    "keywords": [
+      "emergency purchase",
+      "overcharge",
+      "subcontracting",
+      "scenario"
+    ],
+    "phase": 5
+  },
+  "day30": {
+    "title": "Final Review & Resume Polish",
+    "keywords": [
+      "resume",
+      "keywords",
+      "interview"
+    ],
+    "phase": 5
+  }
+}
