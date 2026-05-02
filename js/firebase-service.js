@@ -1,24 +1,22 @@
 import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 import { db } from "./firebase-config.js";
 
-// We'll use a hardcoded user ID for Shyam for this dashboard
 const USER_ID = "shyam_sap_prep";
 
 /**
- * Fetches the completed days array from Firestore
- * @returns {Promise<number[]>} Array of completed day numbers
+ * Fetches the completed concepts array from Firestore
+ * @returns {Promise<string[]>} Array of completed concept IDs
  */
-export async function getCompletedDays() {
-    if (!db) return []; // Fallback if Firebase isn't configured yet
+export async function getCompletedConcepts() {
+    if (!db) return []; 
     
     try {
         const docRef = doc(db, "progress", USER_ID);
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-            return docSnap.data().completedDays || [];
+            return docSnap.data().completedConcepts || [];
         } else {
-            // Document doesn't exist yet, return empty array
             return [];
         }
     } catch (error) {
@@ -28,18 +26,18 @@ export async function getCompletedDays() {
 }
 
 /**
- * Saves the completed days array to Firestore
- * @param {number[]} completedDays - Array of completed day numbers
+ * Saves the completed concepts array to Firestore
+ * @param {string[]} completedConcepts - Array of completed concept IDs
  */
-export async function saveCompletedDays(completedDays) {
-    if (!db) return; // Fallback if Firebase isn't configured yet
+export async function saveCompletedConcepts(completedConcepts) {
+    if (!db) return; 
     
     try {
         const docRef = doc(db, "progress", USER_ID);
         await setDoc(docRef, {
-            completedDays: completedDays,
+            completedConcepts: completedConcepts,
             lastUpdated: new Date().toISOString()
-        }, { merge: true }); // merge: true keeps other fields intact
+        }, { merge: true }); 
         console.log("Progress saved to Firebase");
     } catch (error) {
         console.error("Error saving progress to Firebase:", error);

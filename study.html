@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Mode - SAP Preparation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Study Page Specific Styles */
+        .study-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: var(--sap-blue);
+            border-color: var(--sap-blue);
+            transform: translateX(-5px);
+        }
+        .concept-card {
+            margin-bottom: 2rem;
+            padding: 2rem;
+        }
+        .concept-title {
+            color: var(--accent-neon);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        .concept-content {
+            line-height: 1.7;
+            color: #CBD5E1;
+            margin-bottom: 1.5rem;
+        }
+        .concept-content h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .concept-content ul, .concept-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .concept-content li {
+            margin-bottom: 0.5rem;
+        }
+        .concept-content strong {
+            color: var(--sap-blue);
+        }
+        .concept-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .complete-btn {
+            background: transparent;
+            border: 1px solid var(--sap-blue);
+            color: var(--sap-blue);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: var(--font-main);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .complete-btn:hover {
+            background: rgba(0, 143, 211, 0.1);
+        }
+        .complete-btn.completed {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <div class="container">
+        <div class="study-header">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+            <div>
+                <span class="day-phase" id="study-phase">Phase Loading...</span>
+                <h1 id="study-title">Loading Day Content...</h1>
+            </div>
+        </div>
+
+        <div id="loading-spinner" style="text-align: center; padding: 3rem;">
+            <i class="fas fa-circle-notch fa-spin fa-3x" style="color: var(--sap-blue);"></i>
+            <p style="margin-top: 1rem; color: var(--text-secondary);">Loading study materials...</p>
+        </div>
+
+        <main id="concepts-container">
+            <!-- Concepts will be injected here -->
+        </main>
+    </div>
+
+    <script type="module" src="js/study.js"></script>
+</body>
+</html>

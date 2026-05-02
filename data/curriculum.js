@@ -1,43 +1,43 @@
 export const curriculumData = [
     // Phase 1: Foundation
-    { day: 1, phase: 1, title: "Introduction to SAP S/4HANA & Fiori", topics: ["Evolution of SAP (R/3 to S/4HANA)", "What is HANA database (In-memory computing)", "Introduction to Fiori Launchpad & Apps (Transactional, Analytical, Factsheet)", "Navigation and basic settings"], approach: "Watch a high-level overview video. Practice navigating the Fiori Launchpad and customizing the home page." },
-    { day: 2, phase: 1, title: "Enterprise Structure in MM", topics: ["Defining Company Code, Plant, Storage Location", "Purchasing Organization (Centralized vs Decentralized)", "Purchasing Groups", "Assigning organizational units"], approach: "Draw the structure on paper first to understand the hierarchy, then configure it in the SAP system." },
-    { day: 3, phase: 1, title: "Material Master Data", topics: ["Material Types and Industry Sectors", "Number Ranges", "Key Views (Basic Data, Purchasing, MRP, Accounting)", "Extending material to other plants/storage locations"], approach: "Create 3 different materials (Raw material, Finished good, Trading good) and note the mandatory fields." },
-    { day: 4, phase: 1, title: "Business Partner (Vendor Master)", topics: ["S/4HANA shift: Vendor to Business Partner (BP)", "BP Roles (General, FI Vendor, Supplier)", "Account Groups and Number Ranges", "Creating a Vendor via T-Code BP"], approach: "Understand the CVI (Customer-Vendor Integration) concept. Create a BP and extend it to purchasing and accounting roles." },
-    { day: 5, phase: 1, title: "Purchasing Info Record & Source List", topics: ["Purpose of Info Record (Standard, Consignment, Subcontracting)", "Creating Info Records (ME11)", "Source List concept and creation (ME01)", "Requirement tracking"], approach: "Link the materials and vendors you created previously using Info Records. Set up pricing conditions." },
+    { day: 1, phase: 1, title: "Introduction to SAP S/4HANA & Fiori", conceptIds: ["day1-concept1", "day1-concept2", "day1-concept3", "day1-concept4"] },
+    { day: 2, phase: 1, title: "Enterprise Structure in MM", conceptIds: ["day2-concept1", "day2-concept2", "day2-concept3", "day2-concept4"] },
+    { day: 3, phase: 1, title: "Material Master Data", conceptIds: ["day3-concept1", "day3-concept2", "day3-concept3", "day3-concept4"] },
+    { day: 4, phase: 1, title: "Business Partner (Vendor Master)", conceptIds: ["day4-concept1", "day4-concept2", "day4-concept3", "day4-concept4"] },
+    { day: 5, phase: 1, title: "Purchasing Info Record & Source List", conceptIds: ["day5-concept1", "day5-concept2", "day5-concept3", "day5-concept4"] },
 
-    // Phase 2: Core Purchasing
-    { day: 6, phase: 2, title: "Purchase Requisition (PR)", topics: ["Direct vs Indirect Procurement", "Creating PR (ME51N)", "Document Types in PR", "Item Categories (Standard, Consignment, etc.)"], approach: "Create PRs for different scenarios (stock material vs consumable material with account assignment)." },
-    { day: 7, phase: 2, title: "Request for Quotation (RFQ)", topics: ["Creating RFQ from PR (ME41)", "Sending RFQ to multiple vendors", "Maintaining Quotations (ME47)", "Price Comparison (ME49)"], approach: "Simulate a bidding process. Send an RFQ to 3 vendors, enter their prices, and select the best one." },
-    { day: 8, phase: 2, title: "Purchase Order (PO) - Basics", topics: ["Structure of a PO (Header, Item, Overview)", "Creating PO with reference to PR/RFQ", "PO Document Types", "Conditions and Pricing in PO"], approach: "Convert your winning quotation from Day 7 into a Purchase Order." },
-    { day: 9, phase: 2, title: "Outline Agreements: Contracts", topics: ["Value Contracts vs Quantity Contracts", "Creating a Contract (ME31K)", "Release Orders (Call-offs) against contracts", "Monitoring contracts"], approach: "Set up a quantity contract for a raw material for 1 year, then create a release order." },
-    { day: 10, phase: 2, title: "Outline Agreements: Scheduling Agreements", topics: ["Concept of Scheduling Agreement (ME31L)", "Creating Delivery Schedules (ME38)", "Difference between Contract and Scheduling Agreement"], approach: "Create a scheduling agreement and maintain schedule lines for the next 3 months." },
-    { day: 11, phase: 2, title: "Special Procurement: Subcontracting", topics: ["Subcontracting process flow", "BOM (Bill of Materials) basics", "Subcontracting PO and Item Category 'L'", "Providing components to vendor (ME2O)"], approach: "Run an end-to-end subcontracting cycle: create BOM, PO, issue components, and receive finished good." },
-    { day: 12, phase: 2, title: "Special Procurement: Consignment", topics: ["Consignment concept", "Consignment Info Record", "Item Category 'K' in PO", "Consignment stock settlement (MRKO)"], approach: "Receive vendor consignment stock into your plant, consume it, and then settle the liability." },
-    { day: 13, phase: 2, title: "Release Strategy in Purchasing", topics: ["Characteristics and Classes", "Release Groups, Codes, and Indicators", "Setting up a Release Strategy for PO", "Releasing POs (ME29N / ME28)"], approach: "Configure a 2-step release strategy based on PO Value > $10,000." },
+    // Phase 2: Core Purchasing (Mocked conceptIds for architecture proof)
+    { day: 6, phase: 2, title: "Purchase Requisition (PR)", conceptIds: ["day6-c1", "day6-c2", "day6-c3", "day6-c4"] },
+    { day: 7, phase: 2, title: "Request for Quotation (RFQ)", conceptIds: ["day7-c1", "day7-c2", "day7-c3", "day7-c4"] },
+    { day: 8, phase: 2, title: "Purchase Order (PO) - Basics", conceptIds: ["day8-c1", "day8-c2", "day8-c3", "day8-c4"] },
+    { day: 9, phase: 2, title: "Outline Agreements: Contracts", conceptIds: ["day9-c1", "day9-c2", "day9-c3", "day9-c4"] },
+    { day: 10, phase: 2, title: "Outline Agreements: Scheduling Agreements", conceptIds: ["day10-c1", "day10-c2", "day10-c3"] },
+    { day: 11, phase: 2, title: "Special Procurement: Subcontracting", conceptIds: ["day11-c1", "day11-c2", "day11-c3", "day11-c4"] },
+    { day: 12, phase: 2, title: "Special Procurement: Consignment", conceptIds: ["day12-c1", "day12-c2", "day12-c3", "day12-c4"] },
+    { day: 13, phase: 2, title: "Release Strategy in Purchasing", conceptIds: ["day13-c1", "day13-c2", "day13-c3", "day13-c4"] },
 
     // Phase 3: Inventory Management
-    { day: 14, phase: 3, title: "Goods Receipt (GR)", topics: ["MIGO transaction overview", "GR against PO (Movement Type 101)", "Stock Types (Unrestricted, Quality Inspection, Blocked)", "Accounting entries during GR"], approach: "Perform GR for the POs created earlier. Verify the stock overview (MMBE) and material documents." },
-    { day: 15, phase: 3, title: "Goods Issue (GI)", topics: ["GI to cost center (Movement Type 201)", "GI to production order", "Scrapping of material", "Reversal of goods movements"], approach: "Issue materials to a cost center and observe the financial impact." },
-    { day: 16, phase: 3, title: "Transfer Postings", topics: ["Plant to Plant transfer (1-step vs 2-step)", "Storage Location to Storage Location transfer", "Material to Material transfer", "Stock Type to Stock Type transfer"], approach: "Execute a 2-step plant-to-plant transfer and check the stock in transit." },
-    { day: 17, phase: 3, title: "Physical Inventory", topics: ["Physical Inventory Process Flow", "Creating Physical Inventory Document (MI01)", "Entering Count (MI04)", "Posting Differences (MI07)"], approach: "Simulate a year-end stock take. Enter a count different from system stock and post the difference." },
-    { day: 18, phase: 3, title: "Material Valuation & Split Valuation", topics: ["Standard Price vs Moving Average Price", "Valuation Areas", "Configuring Split Valuation", "Valuation Types (e.g., Domestic, Imported)"], approach: "Configure split valuation for a material based on Origin (Domestic/Imported) and procure both." },
-    { day: 19, phase: 3, title: "Batch Management", topics: ["Batch classification", "Creating and assigning batches", "Batch determination in purchasing and IM", "Shelf-life expiration date (SLED)"], approach: "Activate batch management for a material, receive it in batches, and check batch records." },
-    { day: 20, phase: 3, title: "Reservation & Negative Stocks", topics: ["Creating reservations (MB21)", "Managing and issuing against reservations", "Concept of negative stocks (when and how to use)"], approach: "Create a manual reservation for a future date and issue goods against it." },
+    { day: 14, phase: 3, title: "Goods Receipt (GR)", conceptIds: ["day14-c1", "day14-c2", "day14-c3", "day14-c4"] },
+    { day: 15, phase: 3, title: "Goods Issue (GI)", conceptIds: ["day15-c1", "day15-c2", "day15-c3", "day15-c4"] },
+    { day: 16, phase: 3, title: "Transfer Postings", conceptIds: ["day16-c1", "day16-c2", "day16-c3", "day16-c4"] },
+    { day: 17, phase: 3, title: "Physical Inventory", conceptIds: ["day17-c1", "day17-c2", "day17-c3", "day17-c4"] },
+    { day: 18, phase: 3, title: "Material Valuation & Split Valuation", conceptIds: ["day18-c1", "day18-c2", "day18-c3", "day18-c4"] },
+    { day: 19, phase: 3, title: "Batch Management", conceptIds: ["day19-c1", "day19-c2", "day19-c3", "day19-c4"] },
+    { day: 20, phase: 3, title: "Reservation & Negative Stocks", conceptIds: ["day20-c1", "day20-c2", "day20-c3"] },
 
     // Phase 4: LIV & Integration
-    { day: 21, phase: 4, title: "Logistics Invoice Verification (LIV)", topics: ["MIRO transaction", "Invoice against PO", "Tolerances in Invoice Verification", "Blocking and releasing invoices (MRBR)"], approach: "Post an invoice exactly matching the PO/GR, then post one with a price variance to see it block." },
-    { day: 22, phase: 4, title: "Credit Memos & Subsequent Debits/Credits", topics: ["Difference between Credit Memo, Subsequent Debit, and Subsequent Credit", "Returning goods to vendor", "Handling quantity vs price discrepancies"], approach: "Process a return to vendor (Movement Type 122) and post the corresponding credit memo." },
-    { day: 23, phase: 4, title: "Automatic Account Determination (FI-MM Integration) - Part 1", topics: ["Valuation Class and Account Category Reference", "Movement Types and Transaction Event Keys (BSX, WRX)", "Chart of Accounts setup"], approach: "Study the link between Material Master, Movement Type, and G/L accounts." },
-    { day: 24, phase: 4, title: "Automatic Account Determination (FI-MM Integration) - Part 2", topics: ["Configuring OBYC", "Account modifiers", "Troubleshooting account determination errors"], approach: "Intentionally break the OBYC setup, try to do a GR, read the error, and fix it." },
-    { day: 25, phase: 4, title: "Integration with other modules (SD & PP)", topics: ["MM-SD Integration (Third Party Sales, STO)", "MM-PP Integration (MRP, Production Order component issue)"], approach: "Understand the touchpoints. Review the process flow for a Stock Transport Order (STO)." },
+    { day: 21, phase: 4, title: "Logistics Invoice Verification (LIV)", conceptIds: ["day21-c1", "day21-c2", "day21-c3", "day21-c4"] },
+    { day: 22, phase: 4, title: "Credit Memos & Subsequent Debits/Credits", conceptIds: ["day22-c1", "day22-c2", "day22-c3"] },
+    { day: 23, phase: 4, title: "Automatic Account Determination - Part 1", conceptIds: ["day23-c1", "day23-c2", "day23-c3"] },
+    { day: 24, phase: 4, title: "Automatic Account Determination - Part 2", conceptIds: ["day24-c1", "day24-c2", "day24-c3"] },
+    { day: 25, phase: 4, title: "Integration with other modules (SD & PP)", conceptIds: ["day25-c1", "day25-c2"] },
 
     // Phase 5: Advanced S/4HANA Features & Interview Prep
-    { day: 26, phase: 5, title: "S/4HANA Innovations in MM", topics: ["Material Ledger (mandatory in S/4HANA)", "Extended material number (40 chars)", "Simplified data model (MATDOC)", "New Fiori Apps for Purchasing"], approach: "Review S/4HANA simplification lists for sourcing and procurement." },
-    { day: 27, phase: 5, title: "MRP & MRP Live", topics: ["MRP Procedures (PD, VB, etc.)", "MRP Control parameters", "Running MRP (MD01N / MRP Live)", "Evaluating MRP results (MD04)"], approach: "Set up reorder point planning for a material, consume stock below the point, and run MRP Live." },
-    { day: 28, phase: 5, title: "Reporting & Analytics in S/4HANA", topics: ["Standard MM Reports (ME2N, ME2L, MB51)", "Embedded Analytics in Fiori", "Smart Business KPIs for Purchasing"], approach: "Explore Fiori analytical apps like 'Overdue Purchase Order Items' and 'Purchasing Spend'." },
-    { day: 29, phase: 5, title: "Mock Interview - Scenario Based", topics: ["Resolving GR/IR clearing account issues", "Handling price changes after GR", "Subcontracting vs Consignment use cases", "P2P lifecycle questions"], approach: "Practice speaking the answers out loud. Focus on explaining *why* a configuration is done." },
-    { day: 30, phase: 5, title: "Final Review & Resume Polish", topics: ["Reviewing all personal notes", "Highlighting S/4HANA specific knowledge on resume", "Preparing questions to ask the interviewer"], approach: "Update your resume with specific SAP S/4HANA MM keywords (BP, MATDOC, MRP Live, Fiori)." }
+    { day: 26, phase: 5, title: "S/4HANA Innovations in MM", conceptIds: ["day26-c1", "day26-c2", "day26-c3", "day26-c4"] },
+    { day: 27, phase: 5, title: "MRP & MRP Live", conceptIds: ["day27-c1", "day27-c2", "day27-c3", "day27-c4"] },
+    { day: 28, phase: 5, title: "Reporting & Analytics in S/4HANA", conceptIds: ["day28-c1", "day28-c2", "day28-c3"] },
+    { day: 29, phase: 5, title: "Mock Interview - Scenario Based", conceptIds: ["day29-c1", "day29-c2", "day29-c3", "day29-c4"] },
+    { day: 30, phase: 5, title: "Final Review & Resume Polish", conceptIds: ["day30-c1", "day30-c2", "day30-c3"] }
 ];
 
 export const phaseNames = {
